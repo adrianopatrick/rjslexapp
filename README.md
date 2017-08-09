@@ -1,1 +1,4 @@
-Projeto que resolve o problema de um component dentro do outro.
+LexAPP
+
+ - Equipe
+ Adriano Patrick Cunha - adrianopatrick@gmail.com
