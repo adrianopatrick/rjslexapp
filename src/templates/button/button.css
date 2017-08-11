@@ -2,7 +2,7 @@
     position: relative;
 
     display: block;
-    margin: 20px auto;
+    margin: 20px 0px;
     padding: 0;
 
     overflow: hidden;
@@ -12,14 +12,14 @@
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 
-    background-color: #225841;
+    background-color: #004F80;
     color: #ecf0f1;
 
     transition: background-color .3s;
 }
 
 .btn:hover, .btn:focus {
-    background-color: #225841;
+    background-color: #004F80;
 }
 
 .btn > * {
@@ -29,6 +29,8 @@
 .btn span {
     display: block;
     padding: 12px 24px;
+    inline-size: 230px;
+    letter-spacing: 0.5px;
 }
 
 .btn:before {

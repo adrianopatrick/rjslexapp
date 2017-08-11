@@ -1,16 +1,17 @@
 .group {
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: relative;
     margin-bottom: 15px;
 }
 
 input {
-    background: #582239;
+    background: #F3F3F4;
     font-size: 15px;
     padding: 10px 10px 10px 5px;
     display: block;
     border: none;
-    color: #e6e6e6;
-    border-bottom: 1px solid #225841;
+    border-bottom: 1px solid #004F80;
     width: 100%;
 }
 
@@ -20,8 +21,7 @@ input:focus {
 
 /* LABEL ======================================= */
 label {
-    color: #e6e6e6;
-    font-family: "sans-serif";
+    color: #004F80;
     font-size: 15px;
     font-weight: normal;
     position: absolute;
@@ -37,7 +37,7 @@ label {
 input:focus ~ label, input:valid ~ label {
     top: -10px;
     font-size: 14px;
-    color: #225841;
+    color: #004F80;
 }
 
 /* BOTTOM BARS ================================= */
@@ -52,7 +52,7 @@ input:focus ~ label, input:valid ~ label {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #225841;
+    background: #004F80;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;

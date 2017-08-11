@@ -21,6 +21,7 @@ class Login extends React.Component {
                 </div>
                 <div className="login-footer">
                     <div className="login-footer-right">Esqueci a senha</div>
+                    <div className="login-footer-author">Developed by Adriano Patrick Cunha</div>
                 </div>
             </div>
         )

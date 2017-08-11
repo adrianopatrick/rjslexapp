@@ -1,5 +1,5 @@
 body {
-    background: #582239;
+    background: /*#2F4050;*//*#582239;*/#F3F3F4;
 }
 
 .login-background {
@@ -7,16 +7,16 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -125px;
-    margin-top: -190px;
+    margin-top: -220px;
     width: 250px;
-    height: 380px;
+    height: 440px;
 }
 
 .login-title {
     text-align: center;
     color: #e6e6e6;
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     font-weight: 800;
     letter-spacing: -10px;
     padding: 0px 10px 10px 0px;
@@ -25,28 +25,35 @@ body {
 
 .login-top {
     min-height: 20px;
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 12px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #225841;
+    color: #004F80;
 }
 
 .login-body {
     display: grid;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 0px;
 }
 
 .login-footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 0px 10px 0px 0px;
+    position: relative;
+    display: initial;
     font-size: 12px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #225841;
+    color: #004F80;
 }
 
 .login-footer-right {
     position: relative;
     float: right;
+    margin-top: 10px;
+}
+
+.login-footer-author {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(103, 106, 108);
 }
