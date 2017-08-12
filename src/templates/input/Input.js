@@ -5,11 +5,12 @@ import './input.css';
 class Input extends React.Component {
 
     render() {
+        let type = this.props.type || 'text';
         return (
             <div className="group">
-                <input type="text" required/>
-                <span className="highlight"></span>
-                <span className="bar"></span>
+                <input type={type} required/>
+                <span className="highlight"/>
+                <span className="bar"/>
                 <label>{this.props.label}</label>
             </div>
         );

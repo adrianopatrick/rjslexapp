@@ -1,5 +1,5 @@
 body {
-    background: /*#2F4050;*//*#582239;*/#F3F3F4;
+    background: /*#2F4050;*//*#582239;*//*#F3F3F4*/#2F4050;
 }
 
 .login-background {
@@ -28,7 +28,7 @@ body {
     padding: 10px 0px;
     font-size: 12px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #004F80;
+    color: #fff;
 }
 
 .login-body {
@@ -41,7 +41,7 @@ body {
     display: initial;
     font-size: 12px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #004F80;
+    color: #fff;
 }
 
 .login-footer-right {

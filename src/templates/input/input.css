@@ -6,11 +6,12 @@
 }
 
 input {
-    background: #F3F3F4;
+    background: #2F4050;
     font-size: 15px;
     padding: 10px 10px 10px 5px;
     display: block;
     border: none;
+    color: #fff;
     border-bottom: 1px solid #004F80;
     width: 100%;
 }
@@ -21,7 +22,7 @@ input:focus {
 
 /* LABEL ======================================= */
 label {
-    color: #004F80;
+    color: #fff;
     font-size: 15px;
     font-weight: normal;
     position: absolute;
@@ -37,7 +38,7 @@ label {
 input:focus ~ label, input:valid ~ label {
     top: -10px;
     font-size: 14px;
-    color: #004F80;
+    color: #fff;
 }
 
 /* BOTTOM BARS ================================= */

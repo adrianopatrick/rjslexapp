@@ -1,7 +1,11 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
 import Input from '../templates/input/Input';
 import Button from '../templates/button/Button';
+
+import {iniciarLogin} from "./actions"
 
 import './login.css';
 
@@ -14,8 +18,8 @@ class Login extends React.Component {
                 <div className="login-top">Identifique-se para ter acesso ao sistema.</div>
                 <div className="login-body">
 
-                    <Input label="Usuário"/>
-                    <Input label="Senha"/>
+                    <Input label="Usuário" type="text"/>
+                    <Input label="Senha" type="password"/>
 
                     <Button name="Entrar"/>
                 </div>
@@ -26,6 +30,20 @@ class Login extends React.Component {
             </div>
         )
     }
+
+    componentWillMount(){
+        this.props.iniciarLogin();
+    }
 }
 
-export default Login;
+const mapStateToProps = state => ({
+    mensagem: state.login.mensagem
+});
+
+const mapDispatchToProps = dispatch =>
+    bindActionCreators({
+        iniciarLogin
+    }, dispatch);
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
