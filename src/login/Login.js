@@ -1,11 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import {Link} from 'react-router-dom';
 
 import Input from '../templates/input/Input';
 import Button from '../templates/button/Button';
 
-import {iniciarLogin} from "./actions"
+import {iniciarLogin, efetuarLogin} from "./actions"
 
 import './login.css';
 
@@ -21,7 +22,9 @@ class Login extends React.Component {
                     <Input label="Usuário" type="text"/>
                     <Input label="Senha" type="password"/>
 
-                    <Button name="Entrar"/>
+                    <Link style={{textDecoration: 'none'}} to="/painel">
+                        <Button name="Entrar" onClick={() => this.props.efetuarLogin}/>
+                    </Link>
                 </div>
                 <div className="login-footer">
                     <div className="login-footer-right">Esqueci a senha</div>
@@ -31,7 +34,7 @@ class Login extends React.Component {
         )
     }
 
-    componentWillMount(){
+    componentWillMount() {
         this.props.iniciarLogin();
     }
 }
@@ -42,7 +45,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch =>
     bindActionCreators({
-        iniciarLogin
+        iniciarLogin,
+        efetuarLogin
     }, dispatch);
 
 

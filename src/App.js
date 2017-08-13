@@ -1,8 +1,8 @@
 import React from 'react';
-import Login from './login/Login';
+import Main from './main/Main';
 
 export default props => (
     <div>
-        <Login />
+        <Main />
     </div>
-)
+);
