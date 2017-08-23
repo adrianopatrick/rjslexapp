@@ -5,5 +5,5 @@ export const iniciarLogin = () => ({
 });
 
 export const efetuarLogin = (login, senha) => {
-    return logar(login, senha);
+    return [logar(login, senha), {type: 'LOGIN_IN'}];
 };

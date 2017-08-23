@@ -3,9 +3,11 @@ let INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-    switch (action.type){
+    switch (action.type) {
         case 'INICIAR_LOGIN':
             return {...state, mensagem: 'Bem vindo!'};
+        case 'LOGIN_IN':
+            return {...state, mensagem: ''};
         default:
             return state;
     }

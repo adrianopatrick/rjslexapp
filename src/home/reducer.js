@@ -1,11 +1,11 @@
 const INITIAL_STATE = {
-    user: null
+    auth: null
 };
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case 'USER_AUTHENTICATED':
-            return {...state, user: action.payload};
+            return {...state, auth: action.payload};
         default:
             return state;
     }

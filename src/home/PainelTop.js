@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PainelTop = () => (
+const PainelTop = (props) => (
     <div>
-        <div>User:</div>
+        <div><i className="fa fa-user-circle" />User: {props.auth.login}</div>
     </div>
 );
 

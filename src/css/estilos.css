@@ -1,3 +1,98 @@
+.painel-geral {
+    display: flex;
+    height: -webkit-fill-available;
+}
+
+.painel-menu {
+    display: block;
+    min-width: 250px;
+}
+
+.painel-content {
+    display: block;
+    background: #F3F3F4;
+    width: 100%;
+}
+
+.nav {
+    -webkit-padding-start: 00px;
+}
+
+.nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+.nav.navbar-right > li > a {
+    color: #999c9e;
+}
+.nav > li.active > a {
+    color: #ffffff;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus {
+    background-color: #293846;
+    color: white;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background: #fff;
+}
+.nav.navbar-top-links > li > a:hover,
+.nav.navbar-top-links > li > a:focus {
+    background-color: transparent;
+}
+.nav > li > a i {
+    margin-right: 6px;
+}
+.navbar {
+    border: 0;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: #2f4050;
+}
+
+.nav > li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+    display: block;
+}
+
+.nav > li.active > a {
+    color: #ffffff;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #293846;
+    color: white;
+}
+
+.nav > li > a i {
+    margin-right: 10px;
+    display: inline;
+}
+
+.navbar-static-side {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
 .form-content {
-    background: #e6e6e6;
+    background: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    height: 95%;
 }
