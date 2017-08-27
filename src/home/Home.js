@@ -4,9 +4,10 @@ import {Route, Switch} from 'react-router-dom';
 
 import Menu from './Menu';
 import PainelTop from './PainelTop';
-import Dashboard from "../atendimento/Dashboard";
+import DashboardAtendimento from "../atendimento/Dashboard";
 
 import '../css/estilos.css';
+import DashboardAcolhimento from "../acolhimento/Dashboard";
 
 class Home extends React.Component {
 
@@ -15,15 +16,14 @@ class Home extends React.Component {
             <div className="painel-geral">
                 <div className="painel-menu">
                     <PainelTop auth={{login: "Adriano"}}/>
-                    <Menu/>
+                    <Menu location={this.props.location}/>
                 </div>
 
                 <div className="painel-content">
-                    <div className="form-content">
-                        <Switch>
-                            <Route path="/painel/atendimento" component={Dashboard}/>
-                        </Switch>
-                    </div>
+                    <Switch>
+                        <Route path="/painel/atendimento" component={DashboardAtendimento} />
+                        <Route path="/painel/acolhimento" component={DashboardAcolhimento} />
+                    </Switch>
                 </div>
             </div>
         )

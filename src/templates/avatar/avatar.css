@@ -1,0 +1,58 @@
+.avatar-circle{
+    width: 100px;
+    height: 100px;
+    background-color: #CBECFB;
+    text-align: center;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 60%;
+    top: 50%;
+}
+
+.avatar-initials {
+    position: relative;
+    font-size: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.avatar-username {
+    color: #a7b1c2;
+    position: relative;
+    left: 15%;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.avatar-role {
+    color: #8095A8;
+    position: relative;
+    left: 15%;
+}
+
+.avatar {
+    height: 150px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .avatar-circle{
+        display: none;
+    }
+    .avartar-initials {
+        display: none;
+    }
+    .avatar-username {
+        display: none;
+    }
+    .avatar-role{
+        display: none;
+    }
+    .avatar {
+        height: 50px;
+    }
+}

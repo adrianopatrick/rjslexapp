@@ -1,9 +1,8 @@
 import React from 'react';
+import Avatar from '../templates/avatar/Avatar';
 
 const PainelTop = (props) => (
-    <div>
-        <div><i className="fa fa-user-circle" />User: {props.auth.login}</div>
-    </div>
+    <Avatar value="Adriano Patrick Cunha" />
 );
 
 export default PainelTop;
