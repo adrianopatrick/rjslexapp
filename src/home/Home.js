@@ -18,8 +18,8 @@ class Home extends React.Component {
                     <PainelTop auth={{login: "Adriano"}}/>
                     <Menu location={this.props.location}/>
                 </div>
-
                 <div className="painel-content">
+                    <div className="painel-logout"></div>
                     <Switch>
                         <Route path="/painel/atendimento" component={DashboardAtendimento} />
                         <Route path="/painel/acolhimento" component={DashboardAcolhimento} />

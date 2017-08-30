@@ -1,10 +1,12 @@
 body {
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .painel-geral {
     display: flex;
-    height: -webkit-fill-available;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .painel-menu {
@@ -16,6 +18,12 @@ body {
     display: block;
     background: #F3F3F4;
     width: 100%;
+}
+
+.painel-logout {
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
 }
 
 .nav {
@@ -103,9 +111,17 @@ body {
 
 .form-content {
     background: #ffffff;
-    margin: 20px;
+    margin: 0px 20px 0 20px;
     padding: 20px;
-    height: 95%;
+    height: 90%;
+}
+
+.form-header {
+    border-bottom: 2px solid #F3F3F4;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    color: #6c6c7b;
+    margin-bottom: 20px;
 }
 
 .animated {
